@@ -1,0 +1,43 @@
+/* Base Style */
+body{font-family: 'Lato', sans-serif; font-size: 16px;}
+
+a{text-decoration: none;}
+
+h1, h2, p{color: black; padding-bottom: 25px;}
+
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+
+.button{padding: 18px 28px; background: #1b79f3; color: #fff; display: inline-block; border-radius: 6px;}
+
+
+
+/* Header */
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 30px;
+    max-width: 1350px;
+    border: 1px solid #000;
+}
+
+.logo{z-index: 1;}
+
+.menu{
+    width: 100%;
+    z-index: 0;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: black; padding: 15px; display: block;}
+.hamburger{display:none}
+
+

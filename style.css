@@ -13,6 +13,9 @@ h1, h2, p{color: black; padding-bottom: 25px;}
 
 .button{padding: 18px 28px; background: #1b79f3; color: #fff; display: inline-block; border-radius: 6px;}
 
+.col{
+    width: 100%;
+}
 
 
 /* Header */
@@ -58,6 +61,37 @@ h1, h2, p{color: black; padding-bottom: 25px;}
     height:500px;
     display:flex;
     width: 100%;
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('2006.png') no-repeat center center;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('stadio.png') no-repeat center center;
     background-size: cover;
 }
+
+
+/* Poster */
+.poster{
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.poster-text{
+    padding-left: 20px;
+}
+
+/* Carousel */
+
+.main-carousel{padding: 150px 0;}
+
+.carousel-cell{
+    height: 450px; 
+    width: 450px;
+    border-radius: 100%;
+    line-height: 450px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+#fut{
+    background:url('fut.jpg') center;
+}
+
+

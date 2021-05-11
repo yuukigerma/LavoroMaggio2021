@@ -1,12 +1,12 @@
 /* Base Style */
-body{font-family: 'Lato', sans-serif; font-size: 16px;}
+body{font-family: 'Lato', sans-serif; font-size: 16px; background-color:rgb(31, 30, 30);}
 
 a{font-family: "Times New Roman", Times, serif; text-decoration: none;}
 
-h1, h2, p{color: black; padding-bottom: 25px;}
+h1, h2, p{color: white; padding-bottom: 25px;}
 
 .big-text{font-size: 70px; font-weight: 900;}
-.med-text{font-size: 40px;}
+.med-text{font-size: 45px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 14px;}
 
@@ -17,6 +17,15 @@ h1, h2, p{color: black; padding-bottom: 25px;}
     width: 100%;
 }
 
+
+/* Classi per nascondere */
+.hidden{
+    display: none;
+}
+  
+.visuallyhidden{
+    opacity: 0;
+}
 
 /* Header */
 
@@ -65,6 +74,24 @@ h1, h2, p{color: black; padding-bottom: 25px;}
     background-size: cover;
 }
 
+.hero_fut{
+    height: 960px;
+    display:flex;
+    width: 100%;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondoviola.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero_fut-text{
+    padding-top: 350px;
+    padding-left: 150px;
+}
+
+.hero_fut-image{
+    padding-top: 250px;
+    padding-left: 80px;
+}
+
 
 /* Poster */
 .poster{
@@ -84,15 +111,69 @@ h1, h2, p{color: black; padding-bottom: 25px;}
 .carousel-cell{
     height: 450px; 
     width: 450px;
-    border-radius: 100%;
     line-height: 450px;
     text-align: center;
     margin-right: 40px;
 }
 
 #fut{
-    background:url('fut.jpg') center;
+    background: url('fut.jpg') center;
 }
+
+#carriera{
+}
+
+#proclub{
+
+}
+
+
+/* Quadrati */
+.quadrati{
+    padding: 40px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.quadrati .col{
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    border: solid 1px red;
+    background: url('sfondonero.jpg') center;
+}
+
+.quadrati .col:hover{
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    border: solid 1px red;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondonero.jpg') center;
+}
+
+.quadrati .col > img{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.quadrati .col > .text{
+    display: none;
+    text-align: center;
+    margin-top: 190px;
+}
+
+.quadrati .col .text h1{
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.quadrati .col .text p{
+    font-size: 22px;
+}
+
+.quadrati .col:hover > img{display: none;}
+.quadrati .col:hover > .text{display: block;}
+
 
 /* Founders */
 .box{

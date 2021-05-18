@@ -10,6 +10,8 @@ h1, h2, p{color: white; padding-bottom: 25px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 14px;}
 
+*{box-sizing: border-box;}
+
 
 @media (max-width: 768px){
     .big-text{font-size: 40px;}
@@ -175,6 +177,7 @@ img.logo:hover{
 }
 
 #carriera{
+    background: url('vandevoordt.jpg') center;
 }
 
 #proclub{
@@ -193,6 +196,7 @@ img.logo:hover{
     padding: 40px 150px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .quadrati .col{
@@ -241,7 +245,7 @@ img.logo:hover{
     }
 
     .quadrati .col{
-        transform: scale(0.60);
+        transform: scale(0.60) translate(-150px); 
         
         margin: 0;
         
@@ -254,8 +258,14 @@ img.logo:hover{
     display: flex;
     width: 100%;
     padding-top: 80px;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondoviola.png') center;
 }
 .boxtex{
-    border: 5px solid black
+    align-items: center;
 }
-
+.boxtex > img{
+padding-left: 20%;
+}
+.boxgerma{
+    width:50%;
+}

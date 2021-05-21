@@ -264,7 +264,7 @@ img.logo:hover{
 .box h1{
     color: black;
     font-size: 70px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .box h1--open{
 
@@ -277,7 +277,8 @@ img.logo:hover{
     font-size: large;
 }
 .transizione{
-    height: 2.5vh;
+    height: 0.5vh;
+    background: linear-gradient(0deg,  rgb(0, 0, 0), rgba(0,0,0,0.9)), url('sfondoonero.jpg') center;
 }
 .box-grande{
     background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondo-1.jpg') center;

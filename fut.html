@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     
     <link rel="stylesheet" href="style.css">
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
+
 </head>
 <body>
     <div class="header">
@@ -21,7 +22,7 @@
             <a href="index.html"><img class="logo" src="fifa-logo.png" width="200px" height="auto" alt=""></a>
         </div>
         <ul class="menu">
-            <li><a href="">Tabellone</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="">Finale</a></li>
         </ul>
         <div class="cta">
@@ -93,5 +94,12 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $(".hamburger").on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+        });
+    </script>
 </body>
 </html>

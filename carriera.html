@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
+        crossorigin="anonymous" />
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -33,22 +40,64 @@
         </div>
     </div>
     <div class="carriera">
-        <div class="carriera-big-text">
-            <p>La modalità carriera in Fifa 21</p>
+        <div class="carriera-text">
+            <div class="carriera-big-text">
+                <p>La modalità carriera in Fifa 21</p>
+            </div>
+            <div class="carriera-small-text">
+                <p>La modalità carriera è basata <br>
+                    sulla scelta di un giocatore o allenatore <br>
+                    per percorrere appunto la sua carriera calcistica.
+                </p>
+            </div>
+            <div class="carriera-med-text">
+                <p>Di solito vengono scelti giocatori giovani e <br>
+                    poco conosciuti, <br>
+                    in modo da avere più anni per giocare la loro <br>
+                    carriera e farli emergere
+                </p>
+
+            </div>
         </div>
-        <div class="carriera-small-text">
-            <p>La modalità carriera è basata
-                sulla scelta di un giocatore o allenatore
-                per percorrere appunto la sua carriera calcistica.
-            </p>
-        </div>
-        <div class="carriera-med-text">
-            <p>Di solito vengono scelti giocatori giovani e poco conosciuti,
-                in modo da avere più anni per giocare la loro
-                carriera e farli emergere
-            </p>
+        <div class="carriera-video">
+            <video controls autoplay class="video">
+                <source src="video-carriera.mp4" type="video/mp4">
+                Il tuo browser non supporta il formato
+            </video>
         </div>
     </div>
-    
+
+    <div class="carriera-1">
+        <div class="carriera1-1">
+            <div class="carriera1-text">
+                <h1> Carriera giocatore</h1>
+                <p>Scelto un giocatore, reale (ossia un giocatore professionista)
+                    o non reale (creato da te) è l'ora di farlo diventare il campione del mondo.
+                    Sviluppa le abilità del tuo personaggio in fantastiche sessioni di allenamento
+                    e compi perforanti performance per far crescere la sua fama a livello mondiale!
+                </p>
+            </div>
+
+            <div class="carriera1-img">
+                <img src="carriera-mbappe.jpeg" width="700px" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            });
+        });
+    </script>
 </body>
+
 </html>

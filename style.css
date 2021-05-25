@@ -1,4 +1,7 @@
 /* Base Style */
+*{
+    box-sizing: border-box;
+}
 body{font-family: 'Lato', sans-serif; font-size: 16px; background-color:rgb(31, 30, 30);}
 
 a{font-family: "Times New Roman", Times, serif; text-decoration: none;}
@@ -52,6 +55,7 @@ img.logo:hover{
 .menu{
     width: 100%;
     z-index: 0;
+    transition: all 1s cubic-bezier(.235, .61, .355, 1)
 }
 
 .menu li{display: inline-block;}
@@ -76,6 +80,7 @@ img.logo:hover{
         background: black;
         padding-top: 80px;
         transition: 0.5s;
+
     }
 
     .menu li{display: block;}
@@ -203,7 +208,7 @@ img.logo:hover{
 }
 
 .quadrati .col{
-    height: 70%;
+    height: 450px;
     width: 30%;
     margin: 10px;
     border: solid 1px red;
@@ -211,7 +216,6 @@ img.logo:hover{
 }
 
 .quadrati .col:hover{
-    height: 70%;
     width: 30%;
     margin: 10px;
     border: solid 1px red;
@@ -220,12 +224,14 @@ img.logo:hover{
 
 .quadrati .col > img{
     width: 60%;
-    height: 80%;
+    height: auto;
     margin: 10% 20%;
     float:none;
 }
 
 .quadrati .col > .text{
+    height: 450px;
+    padding-top: 150px;
     display: none;
     text-align: center;
 }
@@ -243,13 +249,18 @@ img.logo:hover{
 .quadrati .col:hover > .text{display: block;}
 
 @media (max-width: 1400px){
+    
     .quadrati .col{
         width: 45%;
     }
 
     .quadrati .col:hover{
-        height: 70%;
         width: 45%;
+    }
+    .quadrati .col > .text{
+        padding-top: 150px;
+        display: none;
+        text-align: center;
     }
 }
 
@@ -258,16 +269,17 @@ img.logo:hover{
 
 
 @media (max-width: 768px){
+
     .quadrati{
         display: block;
         padding: 40px 0;
+        padding-left: 13%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .quadrati .col{
-        transform: scale(0.60) translate(-150px); 
-        
-        margin: 0;
-        
+        height: 140px;
     }
 }
 
@@ -282,9 +294,6 @@ img.logo:hover{
     color: black;
     font-size: 70px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.box h1--open{
-
 }
 .founders-text{
     width:50%;
@@ -306,6 +315,7 @@ padding-left: 20%;
 
 /* Carriera */
 .carriera{
+    display: flex;
     padding-top: 80px;
     padding-left: 2%;
     background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondo-blu.png') center;
@@ -313,6 +323,91 @@ padding-left: 20%;
     height: 80vh;
 }
 .carriera-big-text{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: xx-large;
+}
+.carriera-big-text p{
+    color: coral;
+}
+.carriera-text{
+    padding-top: 40px;
+    width: 50%;
+    min-width: 400px;
+}
+.carriera-video{
+    width: 50%;
+    min-width: 400px;
+}
+.video{
+    height: 350px;
+}
+.button-carriera{
+    padding: 18px 28px;
+    background-color: #ff3131;
+    color:#fff;
+    display: inline-block;
+    border-radius: 4px;
+    height: 3px;
+    font-size: xx-large;
+    
+}
+.carriera-1{
+    padding-top: 80px;
+    padding-left: 2%;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondo\ nero-giallo.png') center;
+    width:100%;
+    height: 200vh;
+}
+.carriera1-1{
+    display:flex;
+    width:100%;
+}
+.carriera1-text h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: xx-large;
+    color: yellow;
+}
+.carriera1-text{
+    width: 50%;
+}
+.carriera1-img{
+    width: 50%;
+}
+@media (max-width: 768px){
+
+    .carriera{
+        display: block;
+        padding: 40px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .carriera-1{
+        background-size: cover;
+        display: block;
+        padding: 40px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+    }
+    .carriera-1 img{
+        transform: scale(0.60);
+    }
+    .carriera-video{
+        height: fit-content;
+        width: fit-content;
+        margin:auto;
+    }
+    .carriera1-1{
+        display: block;
+        padding: 40px 0;
+        padding-left: 13%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+    }
 }

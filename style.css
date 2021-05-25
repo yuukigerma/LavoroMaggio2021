@@ -197,35 +197,37 @@ img.logo:hover{
 .quadrati{
     padding: 40px 150px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
 }
 
 .quadrati .col{
-    height: 500px;
-    width: 500px;
+    height: 70%;
+    width: 30%;
     margin: 10px;
     border: solid 1px red;
     background: url('sfondonero.jpg') center;
 }
 
 .quadrati .col:hover{
-    height: 500px;
-    width: 500px;
+    height: 70%;
+    width: 30%;
     margin: 10px;
     border: solid 1px red;
     background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondonero.jpg') center;
 }
 
 .quadrati .col > img{
-    margin-top: 50px;
-    margin-left: 90px;
+    width: 60%;
+    height: 80%;
+    margin: 10% 20%;
+    float:none;
 }
 
 .quadrati .col > .text{
     display: none;
     text-align: center;
-    margin-top: 190px;
 }
 
 .quadrati .col .text h1{
@@ -239,6 +241,21 @@ img.logo:hover{
 
 .quadrati .col:hover > img{display: none;}
 .quadrati .col:hover > .text{display: block;}
+
+@media (max-width: 1400px){
+    .quadrati .col{
+        width: 45%;
+    }
+
+    .quadrati .col:hover{
+        height: 70%;
+        width: 45%;
+    }
+}
+
+
+
+
 
 @media (max-width: 768px){
     .quadrati{

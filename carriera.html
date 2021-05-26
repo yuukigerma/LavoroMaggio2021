@@ -15,10 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
         integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
         crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +41,7 @@
             <span></span>
         </div>
     </div>
+    <div class="carrieratot">
     <div class="carriera">
         <div class="carriera-text">
             <div class="carriera-big-text">
@@ -48,15 +51,11 @@
                 <p>La modalità carriera è basata <br>
                     sulla scelta di un giocatore o allenatore <br>
                     per percorrere appunto la sua carriera calcistica.
-                </p>
-            </div>
-            <div class="carriera-med-text">
-                <p>Di solito vengono scelti giocatori giovani e <br>
+                    Di solito vengono scelti giocatori giovani e <br>
                     poco conosciuti, <br>
                     in modo da avere più anni per giocare la loro <br>
                     carriera e farli emergere
                 </p>
-
             </div>
         </div>
         <div class="carriera-video">
@@ -71,7 +70,7 @@
         <div class="carriera1-1">
             <div class="carriera1-text">
                 <h1> Carriera giocatore</h1>
-                <p>Scelto un giocatore, reale (ossia un giocatore professionista)
+                <p>Scelto un giocatore, reale (ossia un calciatore professionista)
                     o non reale (creato da te) è l'ora di farlo diventare il campione del mondo.
                     Sviluppa le abilità del tuo personaggio in fantastiche sessioni di allenamento
                     e compi perforanti performance per far crescere la sua fama a livello mondiale!
@@ -79,25 +78,34 @@
             </div>
 
             <div class="carriera1-img">
-                <img src="carriera-mbappe.jpeg" width="700px" alt="">
+                <img src="mbappe-grigio.jpg" width="600px" alt="">
             </div>
-
         </div>
 
+            <div class="carriera2">
+                <div class="carriera2-img">
+                    <img src="carriera-allenatore.jpg" width="550px" alt="">
+                </div>
+                <div class="carriera2-text">
+                    <h1> Carriera allenatore</h1>
+                    <p>Scelto un allenatore, reale (ossia un coach professionista)
+                        o non reale (creato da te) è l'ora di farlo diventare il migliore in circolazione.
+                        Scegli una squadra da allenare e sviluppa le tue abilità da manager
+                        attraverso tecniche di mercato e grandi performance in big match!
+                    </p>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-    </div>
-
-    <script>
-        $(document).ready(function () {
-            $(".hamburger").on('click', function () {
-                $(".menu").toggleClass("menu--open");
+        <script>
+            $(document).ready(function () {
+                $(".hamburger").on('click', function () {
+                    $(".menu").toggleClass("menu--open");
+                });
             });
-        });
-    </script>
+        </script>
+
+</div>
 </body>
 
 </html>

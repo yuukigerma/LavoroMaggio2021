@@ -113,7 +113,7 @@ img.logo:hover{
     height:500px;
     display:flex;
     width: 100%;
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('stadio.png') no-repeat center center;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/stadio.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -121,7 +121,7 @@ img.logo:hover{
     height: 960px;
     display:flex;
     width: 100%;
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondoviola.png') no-repeat center center;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondoviola.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -184,28 +184,29 @@ img.logo:hover{
 .main-carousel{padding: 150px 0;}
 
 .carousel-cell{
-    height: 450px; 
-    width: 450px;
-    line-height: 450px;
+    height: 600px; 
+    width: 600px;
+    line-height: 600px;
     text-align: center;
     margin-right: 40px;
 }
 
 #fut{
-    background: url('fut.jpg') center;
+    background: url('immagini/fut.jpg') center;
 }
 
 #carriera{
-    background: url('vandevoordt.jpg') center;
+    background: url('immagini/vandevoordt.jpg') center;
 }
 #proclub{
-    background: url('pro-club.jpeg') center;
+    background: url('immagini/pro-club.jpeg') center;
 
 }
 
 @media (max-width: 768px){
     .carousel-cell{
         width: 100%;
+        height: 450px;
     }
 }
 
@@ -224,14 +225,14 @@ img.logo:hover{
     width: 30%;
     margin: 10px;
     border: solid 1px red;
-    background: url('sfondonero.jpg') center;
+    background: url('immagini/sfondonero.jpg') center;
 }
 
 .quadrati .col:hover{
     width: 30%;
     margin: 10px;
     border: solid 1px red;
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondonero.jpg') center;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondonero.jpg') center;
 }
 
 .quadrati .col > img{
@@ -270,29 +271,67 @@ img.logo:hover{
         width: 45%;
     }
     .quadrati .col > .text{
-        padding-top: 150px;
+        padding-top: 120px;
         display: none;
         text-align: center;
     }
 }
 
+@media (max-width:1100px){
+    .quadrati{
+        display: block;
+        padding: 40px 0;
+        padding-left: 25%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .quadrati .col{
+        width: 500px;
+        height: 500px;
+    }
 
+    .quadrati .col:hover{
+        width: 500px;
+        height: 500px;
+    }
 
+    .hero_fut-image{display: none;}
+
+    .hero_fut-text{
+        padding-top: 150px;
+        padding-left: 50px;
+    }
+
+}
 
 @media (max-width: 768px){
 
     .quadrati{
         display: block;
         padding: 40px 0;
-        padding-left: 13%;
+        padding-left: 17%;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .quadrati .col{
-        height: 140px;
+        width: 220px;
+        height: 220px;
     }
+
+    .quadrati .col:hover{
+        width: 220px;
+        height: 220px;
+    }
+
+    .quadrati .col > .text{
+        transform: scale(0.60) translate(0, -230px);
+    }
+
+    #rb{transform: translate(-45px);}
+    #champions{transform: translate(-20px);}
+
 }
 
 
@@ -316,10 +355,10 @@ img.logo:hover{
 }
 .transizione{
     height: 0.5vh;
-    background: linear-gradient(0deg,  rgb(0, 0, 0), rgba(0,0,0,0.9)), url('sfondoonero.jpg') center;
+    background: linear-gradient(0deg,  rgb(0, 0, 0), rgba(0,0,0,0.9)), url('immagini/sfondoonero.jpg') center;
 }
 .box-grande{
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('sfondo-1.jpg') center;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondo-1.jpg') center;
 }
 .boxtex > img{
 padding-left: 20%;
@@ -411,7 +450,7 @@ padding-left: 20%;
 }
 .carrieratot{
     width: 100%;
-    background: url('sfondo-giallo.jpg') center;
+    background: url('immagini/sfondo-giallo.jpg') center;
 }
 @media (max-width: 768px){
 
@@ -420,8 +459,8 @@ padding-left: 20%;
         padding: 40px 0;
         flex-wrap: wrap;
         justify-content: center;
-        height: fit-content;
         width: 100%;
+        height: auto;
     }
 
     .carriera-text{
@@ -434,6 +473,7 @@ padding-left: 20%;
         padding: 40px 0;
         flex-wrap: wrap;
         justify-content: center;
+        transform: translateY(-120px);
     }
 
     .carriera1-text{
@@ -457,5 +497,22 @@ padding-left: 20%;
         padding-left: 3%;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .carriera2{
+        display: block;
+        padding: 40px 0;
+        padding-left: 3%;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateY(-130px);
+        height: 710px;
+    }
+    .carriera2-text{
+        transform: scale(0.85) translate(-5%, -200px);
+    }
+
+    .carriera2-img{
+        transform: scale(0.4) translate(-70%, -80%);
     }
 }

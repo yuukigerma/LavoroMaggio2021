@@ -141,33 +141,6 @@ img.logo:hover{
     padding-left: 80px;
 }
 
-.hero_pc{
-    height: 960px;
-    display:flex;
-    width: 100%;
-    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondo-bianco.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-.hero_pc-text{
-    padding-top: 200px;
-    padding-left: 150px;
-}
-
-.hero_pc-text h1{
-    font-family: 'ZCOOL KuaiLe', cursive;
-}
-
-.hero_pc-text p{
-    font-size: 26px;
-}
-
-.hero_pc-img{
-    padding-top: 150px;
-    padding-left: 80px;
-    padding-right: 40px;
-}
-
 
 @media (max-width:768px){
     .hero_fut-image{display: none;}
@@ -212,9 +185,9 @@ img.logo:hover{
 .main-carousel{padding: 150px 0;}
 
 .carousel-cell{
-    height: 600px; 
-    width: 600px;
-    line-height: 600px;
+    height: 500px; 
+    width: 500px;
+    line-height: 500px;
     text-align: center;
     margin-right: 40px;
 }
@@ -249,7 +222,8 @@ img.logo:hover{
 }
 
 .quadrati .col{
-    height: 450px;
+    height: 0;
+    padding-bottom: 30%;
     width: 30%;
     margin: 10px;
     border: solid 1px red;
@@ -294,6 +268,8 @@ img.logo:hover{
     
     .quadrati .col{
         width: 45%;
+        height: 0;
+        padding-bottom: 45%;
     }
 
     .quadrati .col:hover{
@@ -389,8 +365,24 @@ img.logo:hover{
 .box-grande{
     background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondo-1.jpg') center;
 }
-.boxtex > img{
-padding-left: 20%;
+.tex-img img{
+    height: 400px;
+}
+.germa-img img{
+    height: 300px;
+}
+
+@media (max-width:768px){
+    .box{
+        display: block;
+    }
+    
+    .tex-img img{
+        height: 200px;
+    }
+    .germa-img img{
+        height: 170px;
+    }
 }
 
 /* Carriera */
@@ -430,7 +422,6 @@ padding-left: 20%;
 .carriera-1{
     padding-left: 2%;
     width:100%;
-    height: 200vh;
 }
 .carriera1-1{
     display:flex;
@@ -458,6 +449,7 @@ padding-left: 20%;
 .carriera2{
     display:flex;
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 .carriera2-text{
     padding-left: 20px;
@@ -479,7 +471,7 @@ padding-left: 20%;
 }
 .carrieratot{
     width: 100%;
-    background: url('immagini/sfondo-giallo.jpg') center;
+    background: url('immagini/sfondo-giallo.jpg') center ;
 }
 
 @media(max-width:960px){
@@ -511,6 +503,7 @@ padding-left: 20%;
         flex-wrap: wrap;
         justify-content: center;
         transform: translateY(-120px);
+        height: 1000px;
     }
 
     .carriera1-text{
@@ -545,7 +538,7 @@ padding-left: 20%;
         flex-wrap: wrap;
         justify-content: center;
         transform: translateY(-130px);
-        height: 710px;
+        height: 400px;
     }
     .carriera2-text{
         transform: scale(0.85) translate(-7%, -250px);
@@ -560,3 +553,127 @@ padding-left: 20%;
 
 
 /* Pro Club */
+
+.hero_pc{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondo-bianco.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.proclub1{
+    display:flex;
+    width: 100%;
+}
+
+.hero_pc-titolo{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    height: 600px;
+    padding-right: 15px;
+    padding-left: 30px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.hero_pc .col{
+    padding-top: 100px;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.hero_pc .col img{
+    height: 500px;
+    margin-left: 17%;
+}
+
+.proclub-p1{
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.proclub-p2{
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.proclub_poster{
+    display: flex;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.proclub_poster-text{
+    padding-left: 80px;
+    width: 45%;
+}
+.proclub_poster-text h1{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.proclub_poster-text p{
+    font-size: 25px;
+}
+
+.proclub_poster-image{
+    width: 55%;
+}
+
+
+@media(max-width:768px){
+    .proclub1{
+        display: block;
+    }
+
+    .hero_pc-titolo{
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        height: auto;
+        padding-top: 100px;
+        padding-right: 15px;
+        padding-left: 30px;
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .hero_pc .col{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 2%;
+        width: 100%;
+    }
+
+    .hero_pc .col img{
+        height: 350px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .proclub-p1{
+        padding-top: 0;
+        font-size: 20px;
+    }
+    
+    .proclub-p2{
+        padding-bottom: 0;
+        padding-left: 2%;
+        font-size: 20px;
+    }
+
+    .proclub_poster{
+        display: block;
+        width: 100%;
+        padding-top: 70px;
+    }
+    
+    .proclub_poster-text{
+        padding-left: 5%;
+        width: 100%;
+    }
+    .proclub_poster-text h1{
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+    .proclub_poster-text p{
+        font-size: 20px;
+    }
+    .proclub_poster-image{
+        width: 100%;
+        transform: scale(0.7) translateX(-120px) translateY(-150px);
+    }
+}

@@ -141,6 +141,34 @@ img.logo:hover{
     padding-left: 80px;
 }
 
+.hero_pc{
+    height: 960px;
+    display:flex;
+    width: 100%;
+    background: linear-gradient(0deg,  rgba(54, 52, 52, 0.2), rgba(0,0,0,0.9)), url('immagini/sfondo-bianco.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero_pc-text{
+    padding-top: 200px;
+    padding-left: 150px;
+}
+
+.hero_pc-text h1{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.hero_pc-text p{
+    font-size: 26px;
+}
+
+.hero_pc-img{
+    padding-top: 150px;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+
 @media (max-width:768px){
     .hero_fut-image{display: none;}
 
@@ -226,6 +254,7 @@ img.logo:hover{
     margin: 10px;
     border: solid 1px red;
     background: url('immagini/sfondonero.jpg') center;
+    transition: all 0.5s;
 }
 
 .quadrati .col:hover{
@@ -528,3 +557,6 @@ padding-left: 20%;
         transform: scale(0.6) translate(-30%, -80%);
     }
 }
+
+
+/* Pro Club */

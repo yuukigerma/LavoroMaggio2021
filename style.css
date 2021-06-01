@@ -60,7 +60,7 @@ img.logo:hover{
 
 .menu{
     width: 100%;
-    z-index: 0;
+    z-index: 5;
     transition: all 1s cubic-bezier(.235, .61, .355, 1)
 }
 
@@ -69,7 +69,7 @@ img.logo:hover{
 
 .cta{}
 
-.hamburger{display:none}
+.hamburger{display:none;z-index: 10;}
 
 
 @media (max-width: 768px){
@@ -200,7 +200,7 @@ img.logo:hover{
     background: url('immagini/vandevoordt.jpg') center;
 }
 #proclub{
-    background: url('immagini/pro-club.jpeg') center;
+    background: url('immagini/proclublogo.jpg') center;
 
 }
 
@@ -415,8 +415,9 @@ img.logo:hover{
     animation: backInRight; 
     animation-duration: 2s;
 }
-.video{
+video{
     height: 350px;
+    z-index: inherit;
 }
 
 .carriera-1{
@@ -565,7 +566,9 @@ img.logo:hover{
     display:flex;
     width: 100%;
 }
-
+.proclub1 img{
+    animation: backInRight;
+}
 .hero_pc-titolo{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -588,11 +591,16 @@ img.logo:hover{
 .proclub-p1{
     padding-top: 30px;
     font-size: 25px;
+    animation: backInLeft;
+}
+.proclub-p1 p{
+    animation: backInLeft;
 }
 
 .proclub-p2{
     padding-bottom: 30px;
     font-size: 25px;
+    animation: backInRight;
 }
 
 .proclub_poster{
